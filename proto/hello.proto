@@ -1,15 +1,16 @@
 syntax = "proto3";
 
-option go_package = "helloworld/helloworld";
+package hello;
 
-package helloworld;
+option go_package = "github.com/injae/go_grpc_study/proto/hello";
 
+import "google/api/annotations.proto";
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply) {
-        option(google.api.http) = {
-            post: "/v1/sayhello"
+        option (google.api.http) = {
+            post: "/hello"
             body: "*"
         };
   }

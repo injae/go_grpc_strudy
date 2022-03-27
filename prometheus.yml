@@ -10,7 +10,7 @@ scrape_configs:
   - job_name: "grpc"
     scrape_interval: 1s
     static_configs:
-      - targets: ["docker.for.mac.localhost:9092"]
+      - targets: ["docker.for.mac.localhost:8080"]
 
 #remote_write:
 #  - url: "<Your Prometheus remote_write endpoint>"

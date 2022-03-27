@@ -1,0 +1,12 @@
+version: v1
+
+name: buf.build/injae/go_grpc_study
+
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
+deps:
+  - buf.build/googleapis/googleapis
