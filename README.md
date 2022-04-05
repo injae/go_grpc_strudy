@@ -1,4 +1,4 @@
-# go_grpc_strudy
+# go_grpc_study
 
 ## prometheus
 - id: admin
